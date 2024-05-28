@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="fondo.jpeg" alt="" class="fondo">
+    <div class="chat-icon" id="chat-icon" onclick="toggleChat()" title="SOY PILI">
+       
+        <img src="PILI.png" alt="Chat Icon" >
+    </div>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <img src="enlace.jpeg" alt="iconEnlace" class="iconEnlace">
+            <button class="close-btn" onclick="toggleChat()">X</button>
+        </div>
+        <!-- <div class="chat-box" id="chat-box">
+            <div class="chat-message bot">
+                <p>Hola soy PILI, tu asistente virtual</p>
+            </div>
+        </div> -->
+        <div class="mensabot" id="mensabot">
+        <div class="options-container" id="options-container">
+            <div class="option" onclick="selectOption('Crear planilla')">
+                <img src="create.svg" alt="Crear planilla">
+                <p>Crear planilla</p>
+            </div>
+            <div class="option" onclick="selectOption('Duplicar planillas')">
+                <img src="copy-5-svgrepo-com.svg" alt="Duplicar planillas">
+                <p>Duplicar planillas</p>
+            </div>
+            <div class="option" onclick="selectOption('Consultar estado de la planilla')" aria-placeholder="hola">
+                <img src="search.svg" alt="Consultar estado de la planilla">
+                <p>Consultar estado de la planilla</p>
+            </div>
+            <div class="option" onclick="selectOption('Descargar comprobante')">
+                <img src="download.svg" alt="Descargar comprobante">
+                <p>Descargar comprobante</p>
+            </div>
+            <div class="option" onclick="selectOption('Preguntas a asistente virtual')">
+                <img src="preguntas.svg" alt="Preguntas a asistente virtual">
+                <p>Preguntale a PILI</p>
+            </div>
+            
+            
+            <div class="option" onclick="selectOption('Enrutar a asesor')">
+                <img src="asesor.svg" alt="Enrutar a asesor">
+                <p>Enrutar a asesor</p>
+            </div>
+        </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta aquí...">
+            <button onclick="submitQuestion()">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
